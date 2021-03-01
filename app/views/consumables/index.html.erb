@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Consumables</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pantry</th>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Unit</th>
+      <th>Quantity</th>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @consumables.each do |consumable| %>
+      <tr>
+        <td><%= consumable.pantry_id %></td>
+        <td><%= consumable.name %></td>
+        <td><%= consumable.cost %></td>
+        <td><%= consumable.unit %></td>
+        <td><%= consumable.quantity %></td>
+        <td><%= consumable.category %></td>
+        <td><%= link_to 'Show', consumable %></td>
+        <td><%= link_to 'Edit', edit_consumable_path(consumable) %></td>
+        <td><%= link_to 'Destroy', consumable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Consumable', new_consumable_path %>

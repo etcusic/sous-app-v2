@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pantry: one
+  name: MyString
+  cost: 1.5
+  unit: MyString
+  quantity: 1.5
+  category: MyString
+
+two:
+  pantry: two
+  name: MyString
+  cost: 1.5
+  unit: MyString
+  quantity: 1.5
+  category: MyString
